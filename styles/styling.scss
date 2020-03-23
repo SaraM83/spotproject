@@ -24,7 +24,6 @@ body {
     top: 0px;
     left: 0px;
     bottom: 70px;
-    
 }
 
 .logo_container {
@@ -32,14 +31,13 @@ body {
     flex-direction: row;
     width: 100%;
     margin: 20px 0px 20px 20px;
-    font-size: 32px;
 }
 
-/*.logo_text {
-    font-size: 40px;
+.logo_text {
+    font-size: 28px;
     font-weight: bold;
     margin: 0px;
-}*/
+}
 
 .item_3 {
     grid-area: top_genres;
@@ -87,6 +85,9 @@ input {
     height: 30px;
     font-size: 14px;
     margin-left: 75px;
+    border-style: none;
+    outline: none;
+    padding-left: 10px;
 }
 
 .upgrade_button {
@@ -99,6 +100,11 @@ input {
     border-width: 2px;
     margin-left: 375px;
     margin-right: 25px;
+    outline: none;
+}
+
+.upgrade_button:hover {
+    background-color: rgba(37, 36, 36, 0.432);
 }
 
 .user_button {
@@ -109,6 +115,11 @@ input {
     width: 100px;
     height: 35px;
     margin-right: 250px;
+    outline: none;
+}
+
+.user_button:hover {
+    background-color: rgba(46, 44, 44, 0.432);
 }
 
 .arrow_left {
@@ -119,6 +130,15 @@ input {
     height: 40px;
     color: whitesmoke;
     margin-right: 10px;
+    outline: none;
+}
+
+.arrow_left:hover {
+    background-color: rgba(44, 42, 42, 0.432);
+}
+
+.arrow_right:hover {
+    background-color: rgba(44, 42, 42, 0.432);
 }
 
 .arrow_right {
@@ -128,6 +148,7 @@ input {
     width: 40px;
     height: 40px;
     color: whitesmoke;
+    outline: none;
 }
 
 .top_genres {
@@ -135,17 +156,23 @@ input {
     height: 220px;
     border-radius: 10px;
     border-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 28px;
     font-weight: bolder;
     margin-right: 15px;
     background-color: rgb(22, 21, 21);
     color: whitesmoke;
+    outline: none;
+}
+
+.top_genres:hover {
+    background-color: rgba(0, 0, 0, 0.432);
 }
 
 .top_text, .browse_text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 36px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 28px;
+    text-align: start;
 }
 
 .browse_all, .misc_ {
@@ -153,58 +180,75 @@ input {
     height: 225px;
     border-radius: 10px;
     border-style: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-size: 20px;
     font-weight: bolder;
     margin-right: 15px;
     color: whitesmoke;
     background-color: rgb(22, 21, 21);
+    outline: none;
 }
+
+.browse_all:hover {
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+.misc_:hover {
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
 
 .sidebar_links {
     display: flex;
-    /*flex-direction: column;*/
-    /*margin: 30px;*/
-    margin-bottom: 15px;
+    margin: 15px 25px 0px 0px;
 }
 
 .fas.fa-home, .fas.fa-search, .fas.fa-book-open {
     margin-right: 15px;
 }
 
-.nav_links {
+.nav_links, .playlist_links {
     list-style: none;
+    padding-left: 25px;
 }
 
-.__home {
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+.playlist_links {
+    line-height: 1.7;
 }
 
-.sidebar_links:link {
+.playlists, .create, .liked {
+    padding-left: 25px;
+}
+
+a:link {
     color: #ffffff;
     text-decoration: none;
 }
 
-.sidebar_links:active {
-    text-decoration: rgba(0, 0, 0, 0.432);
+a:active {
+    color: rgba(0, 0, 0, 0.432);
 }
 
-.sidebar_links:hover {
+a:hover {
     color: #ffffff;
 }
 
-.sidebar_links:visited {
-    color: grey;
+a:visited {
+    color: green;
 }
 
 .button {
     background-color: rgb(31, 29, 29);
     border-style: none;
-    width: 50px;
-    height: 20px;
+    width: 100px;
+    height: 40px;
     color: whitesmoke;
+    padding-top: 25px;
+    outline: none;
+}
+
+.button:hover {
+    color: green;
 }
 
 .item_6 {
@@ -233,11 +277,39 @@ input {
     bottom: 0px;
     right: 0px;
     left: 0px; 
+    padding-top: 25px;
 }
 
 .song_title_container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-right: 20px;
 }
 
+.play_box {
+    padding-top: 22px;
+    outline: none;
+    padding-left: 20px;
+}
+
+.some_box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+.dif_buttons {
+    padding-right: 60px;
+}
+
+.dif_lines, .dif_speakers, .dif_sound {
+    outline: none;
+    background-color: rgb(31, 29, 29);
+    border-style: none;
+    color: whitesmoke;
+    outline: none;
+    padding-top: 25px;
+}
