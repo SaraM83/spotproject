@@ -3,17 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
     <title>Spotify</title>
 </head>
 <body>
     <main>
         <div class="grid-container">
-            <div class="searchfield"></div>
-            <div class="sidebar"></div>
-            <div class="top_genres"></div>
-            <div class="browse"></div>
-            <div class="misc"></div>
-            <div class="footer_player"></div>
+            <div class="item_1">
+                <div class="searchfield">
+                    <button class="arrow_left"><i class="fas fa-chevron-left"></i></button>
+                    <button class="arrow_right"><i class="fas fa-chevron-right"></i></button>
+                    <form>
+                        <input type="search_input" name="search" placeholder="Search for Artists, Songs or Podcasts">
+                    </form>
+                    <button class="upgrade_button">Upgrade</button>
+                    <button class="user_button">User name</button>
+                </div>
+            </div>
+            <div class="item_2">
+                <div class="logo_container">
+                    <p class="logo_text"><i class="fab fa-spotify icon-3x"></i>  Spotify</p>
+                </div>
+                <div class="sidebar_links">
+                    <nav class="side_navigation">
+                        <ul class="nav_links">
+                            <li><a class="sidebar_links __home" href="#" alt="home"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a class="sidebar_links __search" href="#" alt="search"><i class="fas fa-search"></i> Search</a></li>
+                            <li><a class="sidebar_links __library" href="#" alt="library"><i class="fas fa-book-open"></i> Your Library</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="playlist_container">
+                    <ul>
+                        <li><a href="#">Playlist</a></li>
+                        <li>Playlist</li>
+                        <li>Playlist</li>
+                        <li>Playlist</li>
+                        <li>Playlist</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_content">
+                <div class="item_3">
+                    <p class="top_text">Your top genres</p>
+                    <div class="top_genres_buttons">
+                        <button class="top_genres __rock">Rock</button>
+                        <button class="top_genres __pop">Pop</button>
+                        <button class="top_genres __indie">Indie</button>
+                    </div>
+                </div>
+                <div class="item_4">
+                    <p class="browse_text">Browse all</p>
+                    <div class="browse_all_buttons">
+                        <button class="browse_all __podcasts">Podcasts</button>
+                        <button class="browse_all __made">Made for you</button>
+                        <button class="browse_all __charts">Charts</button>
+                        <button class="browse_all __new_release">New Releases</button>
+                        <button class="browse_all __discover">Discover</button>
+                        <button class="browse_all __amplify">Amplify</button>
+                    </div>
+                </div>
+                <div class="item_5">
+                    <p class="misc"></p>
+                    <div class="misc_buttons">
+                        <button class="misc_ __hiphop">Hiphop</button>
+                        <button class="misc_ __mood">Mood</button>
+                        <button class="misc_ __decades">Decades</button>
+                        <button class="misc_ __country">Country</button>
+                        <button class="misc_ __workout">Workout</button>
+                        <button class="misc_ __latin">Latin</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item_6">
+                <div class="footer_container">
+                    <div class="song_title_container">
+                        <a href="some__image"><img src="some">Some img</a>
+                        <a href="some__title">Song</a>
+                        <a href="some__artist">Artist</a>
+                    </div>
+                    <div class="media_player">
+                        <button class="button __backwards"><i class="far fa-arrow-alt-circle-left icon-large"></i></button>
+                        <button class="button __play"><i class="far fa-play-circle"></i></button>
+                        <button class="button __forewards"><i class="far fa-arrow-alt-circle-right"></i></button>
+                    </div>
+                    <div class="dif_buttons">
+                        <button class="dif_lines"></button>
+                        <button class="dif_speakers"></button>
+                        <button class="dif_sound"></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
